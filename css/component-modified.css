@@ -15,6 +15,10 @@
     margin: 30px 0 -30px 0;
 }
 
+.grid > a:nth-child(4), .grid > a:last-child {
+    margin-top: 70px;
+}
+
 .grid figure {
     position: relative;
     overflow: hidden;
@@ -44,7 +48,7 @@
 
 .grid figcaption h2 {
     margin: 0 0 20px 0;
-   /* color: #3498db;*/
+    /* color: #3498db;*/
     /*text-transform: uppercase;*/
     letter-spacing: 1px;
     font-weight: 500;
@@ -115,7 +119,6 @@
     opacity: 0;
 }
 
-
 .demo-3 .grid figure button {
     top: 50%;
     left: 50%;
@@ -126,7 +129,6 @@
     -webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
     transform: translateY(-50%) translateX(-50%) scale(0.25);
 }
-
 
 .demo-3 .grid a:hover figure button {
     opacity: 1;
@@ -140,7 +142,6 @@
     -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
     timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
 }
-
 
 .demo-3 .grid a:hover figcaption p {
     -webkit-transition-delay: 0s;
@@ -179,6 +180,10 @@
     .grid a:nth-child(3n-1) {
         margin: 30px 0 -30px 0;
     }
+
+    .grid > a:nth-child(4), .grid > a:last-child {
+        margin-top: 70px;
+    }
 }
 
 @media screen and (max-width: 45em) {
@@ -194,6 +199,9 @@
         margin: 30px 0 -30px 0;
     }
 
+    .grid > a:nth-child(4), .grid > a:last-child {
+        margin-top: 70px;
+    }
 
     .grid figcaption h2 {
         margin-bottom: 0px;
@@ -222,7 +230,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .grid figcaption{
+    .grid figcaption {
         top: -40px;
+    }
+
+    .grid > a:nth-child(4), .grid > a:last-child {
+        margin-top: 70px;
     }
 }

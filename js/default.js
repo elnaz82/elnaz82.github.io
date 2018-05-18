@@ -15,8 +15,27 @@ $(function() {
     });
 });
 
+
+//Check to see if the window is top if not then display button
+$(window).scroll(function() {
+    if ($(this).scrollTop() < 150) {
+        $('.scroll-top').fadeOut();
+    } else {
+        $('.scroll-top').fadeIn();
+    }
+});
+
+//Click event to scroll to top
+/*$('.scroll-top').click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 800);
+    return false;
+});*/
+
 // Floating label headings for the contact form
 $(function() {
+    $('.scroll-top').hide();
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
         $(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
     }).on("focus", ".floating-label-form-group", function() {
