@@ -150,16 +150,20 @@ header .intro-text .skills {
     color: #47495a;
 }
 
+.process-overview h5 {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #47495a;
+    text-align: center;
+}
+
 .process-overview .mobile .video-wrapper {
     position: absolute;
     top: 58px;
     left: 30px;
     width: 234px;
     background-color: #fafbfd;
-}
-
-#home-mobile {
-
 }
 
 .process-overview .mobile img {
@@ -310,6 +314,12 @@ section h2 {
 #about .btn i, #contact .btn i {
     margin-right: 3px;
     font-size: 16px;
+}
+
+#experience{
+    font-size: 23px;
+    font-weight: bold;
+    color: #1cafc6;
 }
 
 #portfolio /*, .process-overview*/
@@ -576,9 +586,9 @@ footer .footer-below {
 .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
+    right: 45px;
+    /*width: 75px;
+    height: 75px;*/
     z-index: 10;
     background-color: transparent;
     cursor: pointer;
@@ -620,7 +630,18 @@ footer .footer-below {
     border-color: #bce8f1;
 }
 
-/*typed.js style*/
+.flex {
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 31em;
+}
+
+.flex.taller
+    /*typed.js style*/
 .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 1s infinite;
@@ -666,6 +687,47 @@ footer .footer-below {
     }
 }
 
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.mt-40 {
+    margin-top: 40px !important;
+}
+
+.mt-60 {
+    margin-top: 60px !important;
+}
+
+.ml-20 {
+    margin-left: 20px !important;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.pb-20 {
+    padding-bottom: 20px !important;
+}
+
+
 /*medium desktop only*/
 @media (min-width: 992px) and (max-width: 1199px) {
     .mt-0-md-only {
@@ -681,6 +743,10 @@ footer .footer-below {
         left: 27px;
         width: 188px;
         height: 334px
+    }
+
+    .flex {
+        height: 26em;
     }
 }
 
@@ -699,6 +765,10 @@ footer .footer-below {
 @media (min-width: 768px) and (max-width: 991px) {
     .mt-0-sm {
         margin-top: 0 !important;
+    }
+
+    .mt-40-sm {
+        margin-top: 40px !important;
     }
 
     header #gradient {
@@ -726,6 +796,14 @@ footer .footer-below {
         left: 24px;
         width: 139px;
         height: 248px;
+    }
+
+    .flex {
+        height: 21em;
+    }
+
+    .portfolio-modal .close-modal .lr .rl, .portfolio-modal .close-modal .lr {
+        height: 25px;
     }
 }
 
@@ -793,6 +871,14 @@ footer .footer-below {
         margin-bottom: 40px !important;
     }
 
+    .portfolio-modal .modal-content h2{
+        font-size: 2.1em;
+    }
+
+    .portfolio-modal .close-modal{
+        right: 25px;
+    }
+
     header .name {
         font-size: 2em;
     }
@@ -827,11 +913,6 @@ footer .footer-below {
         height: 25px;
     }
 
-    .portfolio-modal .close-modal {
-        right: -15px;
-        top: 15px;
-    }
-
     .overlay-caption .caption .caption-content {
         font-size: 15px;
         top: 15%;
@@ -847,40 +928,11 @@ footer .footer-below {
         width: 259px;
         height: 418px;
     }
+
+    .flex {
+        display: initial;
+    }
 }
 
-.ml-0 {
-    margin-left: 0 !important;
-}
 
-.mt-0 {
-    margin-top: 0 !important;
-}
 
-.mt-10 {
-    margin-top: 10px !important;
-}
-
-.mt-20 {
-    margin-top: 20px !important;
-}
-
-.mb-40 {
-    margin-bottom: 40px !important;
-}
-
-.mt-40 {
-    margin-top: 40px !important;
-}
-
-.ml-20 {
-    margin-left: 20px !important;
-}
-
-.pt-0 {
-    padding-top: 0 !important;
-}
-
-.pb-20{
-    padding-bottom: 20px!important;
-}
