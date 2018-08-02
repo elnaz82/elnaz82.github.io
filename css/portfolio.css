@@ -640,8 +640,7 @@ footer .footer-below {
     height: 31em;
 }
 
-.flex.taller
-    /*typed.js style*/
+
 .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 1s infinite;
@@ -779,9 +778,10 @@ footer .footer-below {
         padding: 50px 0;
     }
 
-    header #statements {
+    header #statements, .typed-cursor {
         font-size: 1.7em;
     }
+
 
     .overlay-caption .caption {
         bottom: -28px;
