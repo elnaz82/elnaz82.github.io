@@ -10,7 +10,7 @@ body {
 }
 
 p {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 p.small {
@@ -36,8 +36,26 @@ a.active {
     text-decoration: none;
 }
 
+h3 {
+    color: #47495a;
+    margin-bottom: 30px;
+}
+
 h4 {
     clear: both;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li strong {
+    font-size: 20px;
+    color: #47495a;
 }
 
 .img-centered {
@@ -160,14 +178,16 @@ header .intro-text .skills {
 
 .process-overview .mobile .video-wrapper {
     position: absolute;
-    top: 58px;
-    left: 30px;
-    width: 234px;
+    top: 64px;
+    left: 31px;
+    width: 258px;
     background-color: #fafbfd;
 }
 
 .process-overview .mobile img {
     box-shadow: none;
+    width: 290px;
+    height: auto;
 }
 
 .section-spacing {
@@ -185,7 +205,7 @@ header .intro-text .skills {
 }
 
 .grey-box ul {
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 
 .grey-box h3, #issues-solution-challenges h3, .process-overview h3 {
@@ -316,7 +336,7 @@ section h2 {
     font-size: 16px;
 }
 
-#experience{
+#experience {
     font-size: 23px;
     font-weight: bold;
     color: #1cafc6;
@@ -341,10 +361,8 @@ section h2 {
 
 }
 
-.process-overview {
+.bg-grey {
     background: #f6f9fc;
-    padding: 40px 0;
-
 }
 
 .portfolio-item {
@@ -405,7 +423,6 @@ section h2 {
 
 #contact {
     position: relative;
-    padding-top: 110px;
 }
 
 #contact:before {
@@ -640,7 +657,6 @@ footer .footer-below {
     height: 31em;
 }
 
-
 .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 1s infinite;
@@ -648,6 +664,33 @@ footer .footer-below {
     animation: blink 1s infinite;
     color: #fff;
     font-size: 2.5em;
+}
+
+.w-desc {
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.black-title {
+    color: #47495a;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.new {
+    background-color: #1cafc6;
+    padding: 3px 5px;
+    margin-left: 5px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: .9px;
+    vertical-align: middle;
+}
+
+.work-type {
+    font-size: 14px;
+    color: #6b7c93;
 }
 
 @keyframes blink {
@@ -702,8 +745,20 @@ footer .footer-below {
     margin-top: 20px !important;
 }
 
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
 .mb-40 {
     margin-bottom: 40px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
 }
 
 .mt-40 {
@@ -726,7 +781,6 @@ footer .footer-below {
     padding-bottom: 20px !important;
 }
 
-
 /*medium desktop only*/
 @media (min-width: 992px) and (max-width: 1199px) {
     .mt-0-md-only {
@@ -735,6 +789,10 @@ footer .footer-below {
 
     header #gradient {
         height: 600px;
+    }
+
+    header #statements {
+        font-size: 2.1em;
     }
 
     .process-overview .mobile .video-wrapper {
@@ -747,6 +805,10 @@ footer .footer-below {
     .flex {
         height: 26em;
     }
+
+    .process-overview .mobile img{
+        width: 212px;
+    }
 }
 
 /*medium and large desktop*/
@@ -754,14 +816,49 @@ footer .footer-below {
     .mt-0-md {
         margin-top: 0 !important;
     }
+
+    .mb-90-md-lg {
+        margin-bottom: 90px !important;
+    }
+
+    .mt-90-md-lg {
+        margin-top: 90px !important;
+    }
 }
 
 #portfolio .portfolio-item {
     margin: 0 0 30px;
 }
 
+/*tablet (sm) and larger*/
+@media (min-width: 768px) {
+    .mb-90-sm-md-lg {
+        margin-bottom: 90px !important;
+    }
+
+    .mt-90-sm-md-lg {
+        margin-top: 90px !important;
+    }
+}
+
 /*tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
+    body, p {
+        font-size: 15px;
+    }
+
+    .portfolio-modal .modal-content h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    ul li strong {
+        font-size: 17px;
+    }
+
     .mt-0-sm {
         margin-top: 0 !important;
     }
@@ -776,12 +873,12 @@ footer .footer-below {
 
     section {
         padding: 50px 0;
+        margin-bottom: 50px;
     }
 
     header #statements, .typed-cursor {
         font-size: 1.7em;
     }
-
 
     .overlay-caption .caption {
         bottom: -28px;
@@ -805,6 +902,14 @@ footer .footer-below {
     .portfolio-modal .close-modal .lr .rl, .portfolio-modal .close-modal .lr {
         height: 25px;
     }
+
+    .mb-50-sm {
+        margin-bottom: 50px !important;
+    }
+
+    .process-overview .mobile img{
+        width: 157px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -821,6 +926,11 @@ footer .footer-below {
 
     section.first {
         padding-top: 75px;
+    }
+
+    .btn-block-xs {
+        display: block;
+        width: 100%;
     }
 
     .navbar .navbar-nav {
@@ -863,20 +973,37 @@ footer .footer-below {
         margin-top: 0 !important;
     }
 
+    .mb-0-xs {
+        margin-bottom: 0 !important;
+    }
+
     .mt-20-xs {
         margin-top: 20px !important;
+    }
+
+    .mb-20-xs {
+        margin-bottom: 20px !important;
     }
 
     .mb-40-xs {
         margin-bottom: 40px !important;
     }
 
-    .portfolio-modal .modal-content h2{
-        font-size: 2.1em;
+    .mt-40-xs {
+        margin-top: 40px !important;
     }
 
-    .portfolio-modal .close-modal{
+    .portfolio-modal .modal-content h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .portfolio-modal .close-modal {
         right: 25px;
+        top: 10px;
     }
 
     header .name {
@@ -884,7 +1011,7 @@ footer .footer-below {
     }
 
     header #statements, .typed-cursor {
-        font-size: 1.5em;
+        font-size: 1.3em;
         line-height: 30px;
     }
 
@@ -898,7 +1025,8 @@ footer .footer-below {
 
     #about img {
         shape-outside: none;
-        margin-bottom: 20px;
+        margin: 0 auto 20px auto;
+        float: none;
     }
 
     .overlay-caption .caption.full-width {
@@ -922,6 +1050,10 @@ footer .footer-below {
         margin-bottom: 40px !important;
     }
 
+    .ml-0-xs {
+        margin-left: 0 !important;
+    }
+
     .process-overview .mobile .video-wrapper {
         top: 64px;
         left: 31px;
@@ -932,6 +1064,11 @@ footer .footer-below {
     .flex {
         display: initial;
     }
+
+    .modal-content .project-details p{
+        font-size: 20px;
+    }
+
 }
 
 

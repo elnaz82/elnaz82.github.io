@@ -170,10 +170,18 @@
 
 @media screen and (max-width: 58em) {
     .grid a {
-        width: 33.333%;
+        width: 50%;
     }
 
     .grid a:nth-child(odd) {
+        margin: 0;
+    }
+
+    .grid > a:nth-child(4), .grid > a:nth-child(6){
+        margin-top: 0;
+    }
+
+    /*.grid a:nth-child(odd) {
         margin-top: 70px;
     }
 
@@ -183,7 +191,7 @@
 
     .grid > a:nth-child(4) {
         margin-top: 70px;
-    }
+    }*/
 }
 
 @media screen and (max-width: 45em) {
@@ -195,7 +203,7 @@
         margin: 0;
     }
 
-    .grid a:nth-child(even),  .grid > a:last-child {
+    .grid a:nth-child(even), .grid > a:last-child {
         margin: 30px 0 -30px 0;
     }
 
@@ -216,10 +224,6 @@
 }
 
 @media screen and (max-width: 27em) {
-    .grid {
-        max-width: 320px;
-    }
-
     .grid a {
         width: 100%;
         margin: 0 !important;
@@ -231,7 +235,7 @@
         top: -40px;
     }
 
-    .grid > a:nth-child(4) {
+   /* .grid > a:nth-child(4) {
         margin-top: 70px;
-    }
+    }*/
 }
