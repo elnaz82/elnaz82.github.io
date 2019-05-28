@@ -60,7 +60,7 @@ $('.navbar-collapse ul li a').click(function() {
 $(function(){
     $("#statements").typed({
         strings: [
-            "I'm a UX Designer based in <br>San Francisco Bay Area. "],
+            "I'm a UX/UI Designer <br>based in San Mateo."],
         typeSpeed: 30
     });
 });
