@@ -7,10 +7,21 @@
 body {
     overflow-x: hidden;
     color: #6b7c93;
+    /*line-height: 30px;*/
+}
+
+body p, body ul{
+    line-height: 30px;
 }
 
 p {
     font-size: 17px;
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
 
 p.small {
@@ -38,18 +49,18 @@ a.active {
 
 h3 {
     color: #47495a;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 h4 {
     clear: both;
 }
 
-ul {
+ul, ol {
     padding-left: 20px;
 }
 
-ul li {
+ul li, ol li {
     margin-bottom: 5px;
 }
 
@@ -60,6 +71,70 @@ ul li strong {
 
 .img-centered {
     margin: 0 auto;
+}
+
+.no-shadow {
+    box-shadow: none !important;
+}
+
+.dark-bg {
+    background-color: #1A1E22;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.add-border-b {
+    border-bottom: 1px solid #eee;
+}
+
+.add-border {
+    border: 1px solid #eee;
+}
+
+.data {
+    font-style: italic;
+    color: #47495a;
+    font-size: x-large;
+}
+
+em {
+    color: #47495a;
+    font-style: italic;
+    font-size: 20px;
+}
+
+blockquote {
+    color: #1cafc6;
+    font-size: 2.125rem;
+    margin: 0;
+    padding: 0 10px;
+    border: none;
+    text-align: center;
+}
+
+blockquote:before {
+    position: absolute;
+    left: 20px;
+    width: 21px;
+    height: 21px;
+    content: '';
+    background: url(../img/portfolio/new/quote-open.svg) no-repeat;
+}
+
+blockquote:after {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    content: '';
+    background: url(../img/portfolio/new/quote-close.svg) no-repeat;
+    margin: 5px 0 0 10px;
+}
+
+figcaption p {
+    margin-top: 15px;
+    line-height: 25px;
 }
 
 header .container {
@@ -153,12 +228,12 @@ header .intro-text .skills {
     margin-left: 33px;
 }
 
-.process-overview img, video {
+.add-shadow {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3);
 }
 
 .process-overview h3 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .process-overview h4 {
@@ -169,11 +244,10 @@ header .intro-text .skills {
 }
 
 .process-overview h5 {
-    margin-bottom: 30px;
-    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     font-size: 20px;
     color: #47495a;
-    text-align: center;
 }
 
 .process-overview .mobile .video-wrapper {
@@ -591,7 +665,7 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content h2 {
-    margin-top: 40px;
+    margin-top: 70px;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
@@ -636,6 +710,10 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
+.portfolio-modal .close-modal.white .lr, .portfolio-modal .close-modal.white .lr .rl {
+    background-color: #fff;
+}
+
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
@@ -644,17 +722,21 @@ footer .footer-below {
 .alert-info {
     color: #31708f;
     background-color: #d9edf7;
-    border-color: #bce8f1;
+    border: none;
 }
 
-.flex {
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-align: center;
+/*vertical center*/
+.auto-box-middle {
+    position: relative;
+    height: 100%;
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
     -webkit-align-items: center;
-    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    height: 31em;
 }
 
 .typed-cursor {
@@ -769,6 +851,10 @@ footer .footer-below {
     margin-top: 60px !important;
 }
 
+.mt-90 {
+    margin-top: 90px !important;
+}
+
 .ml-20 {
     margin-left: 20px !important;
 }
@@ -806,8 +892,12 @@ footer .footer-below {
         height: 26em;
     }
 
-    .process-overview .mobile img{
+    .process-overview .mobile img {
         width: 212px;
+    }
+
+    blockquote:before {
+        left: 10px;
     }
 }
 
@@ -907,8 +997,15 @@ footer .footer-below {
         margin-bottom: 50px !important;
     }
 
-    .process-overview .mobile img{
+    .process-overview .mobile img {
         width: 157px;
+    }
+
+    blockquote:before {
+        left: 0;
+    }
+    .data, em{
+        font-size: large;
     }
 }
 
@@ -1065,10 +1162,13 @@ footer .footer-below {
         display: initial;
     }
 
-    .modal-content .project-details p{
+    .modal-content .project-details p {
         font-size: 20px;
     }
 
+    blockquote:before {
+        left: 4px;
+    }
 }
 
 
