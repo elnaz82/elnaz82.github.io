@@ -109,27 +109,29 @@ blockquote {
     color: #1cafc6;
     font-size: 2.125rem;
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
     border: none;
     text-align: center;
 }
 
 blockquote:before {
-    position: absolute;
-    left: 20px;
+    position: relative;
+    display: inline-block;
     width: 21px;
     height: 21px;
     content: '';
     background: url(../img/portfolio/new/quote-open.svg) no-repeat;
+    margin-right: 5px;
 }
 
 blockquote:after {
-    position: absolute;
+    position: relative;
     width: 21px;
     height: 21px;
+    display: inline-block;
     content: '';
     background: url(../img/portfolio/new/quote-close.svg) no-repeat;
-    margin: 5px 0 0 10px;
+    margin: 0 0 0 5px;
 }
 
 figcaption p {
@@ -895,10 +897,6 @@ footer .footer-below {
     .process-overview .mobile img {
         width: 212px;
     }
-
-    blockquote:before {
-        left: 10px;
-    }
 }
 
 /*medium and large desktop*/
@@ -1001,9 +999,6 @@ footer .footer-below {
         width: 157px;
     }
 
-    blockquote:before {
-        left: 0;
-    }
     .data, em{
         font-size: large;
     }
@@ -1164,10 +1159,6 @@ footer .footer-below {
 
     .modal-content .project-details p {
         font-size: 20px;
-    }
-
-    blockquote:before {
-        left: 4px;
     }
 }
 
