@@ -6,9 +6,9 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('body').on('click', '.page-scroll a', function(event) {
+    $('.portfolio-modal').on('click', '.page-scroll a', function(event) {
         var $anchor = $(this);
-        $('html, body').stop().animate({
+        $('.portfolio-modal').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
@@ -17,7 +17,7 @@ $(function() {
 
 
 //Check to see if the window is top if not then display button
-$(window).scroll(function() {
+$('.portfolio-modal').scroll(function() {
     if ($(this).scrollTop() < 150) {
         $('.scroll-top').fadeOut();
     } else {

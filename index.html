@@ -14,7 +14,7 @@
   <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <link href="css/portfolio.min.css" rel="stylesheet">
+   <link href="css/portfolio.min.css" rel="stylesheet">
   <!--<link href="css/portfolio.css" rel="stylesheet">-->
   <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -31,7 +31,7 @@
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body id="page-top" class="index">
+<body class="index">
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -161,7 +161,7 @@
               <path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/>
             </svg>
             <figcaption>
-              <h2>Project/Request Planner</h2>
+              <h2>Project Planner</h2>
               <p>Daily tasks shouldn't be painful to track and prioritize</p>
               <button class="btn btn-primary">View Project</button>
             </figcaption>
@@ -262,15 +262,27 @@
   </div>
 </footer>
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top page-scroll">
+<!--<div class="scroll-top page-scroll">
   <a class="btn btn-default" href="#page-top">
     <i class="fa fa-chevron-up"></i>
   </a>
-</div>
+</div>-->
 <!-- Portfolio Modals -->
 <!--Store-->
 <div class="portfolio-modal modal fade" id="portfolioModal-1" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
+  <div class="modal-content" id="page-top-1">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#page-top">
+        <!--<img class="img-responsive" src="img/logo-white.png">-->
+      </a>
+    </div>
     <div class="close-modal white" data-dismiss="modal">
       <div class="lr">
         <div class="rl">
@@ -479,9 +491,17 @@
               Sketch
               so that I can quickly drop elements into my mocks.</p>
           </div>
-          <div class="col-xs-12">
-            <img class="img-responsive mt-20 mb-40" src="img/portfolio/new/style-guide-store.jpg">
-          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img class="img-responsive mt-20 mb-40" src="img/portfolio/new/style-guide-store.jpg">-->
+    <div class="wp-block-cover-image has-background-dim"
+         style="background-image: url(img/portfolio/new/style-guide-store.jpg); background-color: #f6f5f6; background-repeat: no-repeat;">
+    </div>
+
+    <div class="process-overview">
+      <div class="container">
+        <div class="row">
           <div class="col-sm-6 col-md-3 col-xs-12 pb-20">
             <p class="black-title"><strong>1. </strong>Catalog listing page</p>
             <img src="img/portfolio/new/listing-w.jpg" class="img-responsive add-border">
@@ -522,7 +542,8 @@
           <div class="clearfix visible-md visible-lg visible-xs"></div>
           <div class="col-md-8 col-md-offset-2 mt-90-sm-md-lg mt-40-xs mb-40">
             <h5>Mockups</h5>
-            <p>After several iterations and user testing we came up with the following solution to address the goals we
+            <p>After several iterations and user testing we came up with the following solution to address the goals
+              we
               defined initially for this project. We mainly based our judgments on the UX metrics we collected
               using <a
                       href="https://www.interaction-design.org/literature/article/google-s-heart-framework-for-measuring-ux"
@@ -545,7 +566,8 @@
                     this page to make finding a product quicker.</p>
                   <p>The card view concept for each product helped to avoid displaying an overwhelming amount of
                     information to customers and decreased the cognitive load.</p>
-                  <p>Prefixing the prices with the currency type abbreviation was another aspect that made pricing clear
+                  <p>Prefixing the prices with the currency type abbreviation was another aspect that made pricing
+                    clear
                     for other countries.</p>
                 </div>
               </div>
@@ -568,7 +590,8 @@
                       <p>Adding dynamic labels for elements that tied to a certain condition increased clarification
                         and
                         decreased sales calls by <span class="data">20%</span>.</p>
-                      <p>I also worked with developers to create instant field validation for quantity dropdown and some
+                      <p>I also worked with developers to create instant field validation for quantity dropdown and
+                        some
                         minor UX enhancements to the element functionality.</p>
                     </div>
                   </div>
@@ -640,8 +663,10 @@
                         presented on product detail pages. I included the savings based on the items they had in
                         the cart on this page as well.</p>
                       <p>Data revealed that going back and forth to update certain items in the cart caused the cart
-                        abandonment. We included a link with a pop-up that would let customers change licensing without
-                        leaving the cart. This update reduced the cart abandonment rate by <span class="data">17%</span>.
+                        abandonment. We included a link with a pop-up that would let customers change licensing
+                        without
+                        leaving the cart. This update reduced the cart abandonment rate by <span
+                                class="data">17%</span>.
                       </p>
                     </div>
                   </div>
@@ -660,7 +685,8 @@
                     <div>
                       <p class="black-title"><strong>4. </strong>Checkout step 1</p>
                       <p>A linear design approach helped stay focused on one task at a time.</p>
-                      <p>Adding an interactive step navigation bar at the top not only provided constant feedback about
+                      <p>Adding an interactive step navigation bar at the top not only provided constant feedback
+                        about
                         where
                         customers are in the process, but also helped them to navigate back if needed.</p>
                       <p>By looking at order summary box, customers had better visibility of the products they were
@@ -686,7 +712,8 @@
                         the information on the previous step without leaving the checkout.</p>
                       <p>Initially, I proposed an <a href="https://jessepollak.github.io/card/" target="_blank">interactive
                         plugin</a> that could possibly reduce error rate while providing the card information.
-                        Interestingly, some of the users thought we are going to steal their card info and print out the
+                        Interestingly, some of the users thought we are going to steal their card info and print out
+                        the
                         card displayed in the plugin.</p>
                     </div>
                   </div>
@@ -718,7 +745,8 @@
             <div class="col-xs-12 mt-90-sm-md-lg mt-40-xs">
               <div class="col-md-8 col-md-offset-2 mt-40">
                 <h3>Impact & Improvements </h3>
-                <p>The redesign of Quest e-commerce website had a positive impact on the checkout experience and content
+                <p>The redesign of Quest e-commerce website had a positive impact on the checkout experience and
+                  content
                   organization in general.</p>
                 <p>However the conversion rate has not been significantly increased which means we have more things to
                   do.</p>
@@ -747,6 +775,11 @@
           <a class="btn btn-default btn-block-xs ml-20 ml-0-xs" data-dismiss="modal" href="#">
             Close Project</a>
         </div>
+        <div class="scroll-top page-scroll">
+          <a class="btn btn-default" href="#page-top-1">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -754,7 +787,17 @@
 
 <!--product page-->
 <div class="portfolio-modal modal fade" id="portfolioModal-2" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
+  <div class="modal-content" id="page-top-2">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#page-top"></a>
+    </div>
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
         <div class="rl">
@@ -1178,6 +1221,11 @@
             <a class="btn btn-default btn-block-xs ml-20 ml-0-xs" data-dismiss="modal" href="#">
               Close Project</a>
           </div>
+          <div class="scroll-top page-scroll">
+            <a class="btn btn-default" href="#page-top-2">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -1186,7 +1234,17 @@
 
 <!--project/request planner-->
 <div class="portfolio-modal modal fade" id="portfolioModal-3" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
+  <div class="modal-content" id="page-top-3">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#page-top"></a>
+    </div>
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
         <div class="rl">
@@ -1593,6 +1651,11 @@
             <a class="btn btn-default btn-block-xs mb-40" data-dismiss="modal" href="#">
               Close Project</a>
           </div>
+          <div class="scroll-top page-scroll">
+            <a class="btn btn-default" href="#page-top-3">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -1601,7 +1664,17 @@
 
 <!--trial download-->
 <div class="portfolio-modal modal fade" id="portfolioModal-4" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
+  <div class="modal-content" id="page-top-4">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#page-top"></a>
+    </div>
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
         <div class="rl">
@@ -2016,6 +2089,11 @@
             <a class="btn btn-default btn-block-xs ml-20 ml-0-xs" data-dismiss="modal" href="#">
               Close Project</a>
           </div>
+          <div class="scroll-top page-scroll">
+            <a class="btn btn-default" href="#page-top-4">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -2024,7 +2102,17 @@
 
 <!--infographic-->
 <div class="portfolio-modal modal fade" id="portfolioModal-5" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
+  <div class="modal-content" id="page-top-5">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#page-top"></a>
+    </div>
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
         <div class="rl">
@@ -2243,6 +2331,11 @@
           <a class="btn btn-default btn-block-xs ml-20 ml-0-xs" data-dismiss="modal" href="#">
             Close Project</a>
         </div>
+        <div class="scroll-top page-scroll">
+          <a class="btn btn-default" href="#page-top-5">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -2250,7 +2343,17 @@
 
 <!--style guide-->
 <div class="portfolio-modal modal fade" id="portfolioModal-6" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
+  <div class="modal-content" id="page-top-6">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#page-top"></a>
+    </div>
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
         <div class="rl">
@@ -2532,6 +2635,11 @@
             </a>
             <a class="btn btn-default btn-block-xs ml-20 ml-0-xs" data-dismiss="modal" href="#">
               Close Project</a>
+          </div>
+          <div class="scroll-top page-scroll">
+            <a class="btn btn-default" href="#page-top-6">
+              <i class="fa fa-chevron-up"></i>
+            </a>
           </div>
         </div>
       </div>
