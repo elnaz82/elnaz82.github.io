@@ -15,14 +15,14 @@ body p, body ul {
 }
 
 p {
-    font-size: 17px;
+    font-size: 16px;
     margin-top: 2.25rem;
     margin-bottom: 2.25rem;
 }
 
-p:last-child {
+/*p:last-child {
     margin-bottom: 0;
-}
+}*/
 
 p.small {
     font-size: 14px;
@@ -77,10 +77,6 @@ ul li strong {
     box-shadow: none !important;
 }
 
-.dark-bg {
-    background-color: #1A1E22;
-}
-
 .text-white {
     color: white !important;
 }
@@ -108,10 +104,10 @@ em {
 blockquote {
     color: #1cafc6;
     font-size: 2.125rem;
-    margin: 0;
     padding: 0;
     border: none;
     text-align: center;
+    margin: 60px 0;
 }
 
 blockquote:before {
@@ -139,6 +135,83 @@ figcaption p {
     line-height: 25px;
 }
 
+ul.no-style-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.block {
+    display: block;
+}
+
+.full-width {
+    width: 95%;
+}
+
+
+/*colors*/
+.green {
+    color: #2ECC40 !important;
+}
+
+.red {
+    color: #FF4136 !important;
+}
+
+.grey {
+    color: #d9d9d9 !important;
+}
+
+
+/*icons list*/
+.icon-text-list > div {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.icon-text-list > div:first-child {
+    padding-right: 7px;
+    padding-top: 5px;
+}
+
+.icon-text-list p{
+    margin-bottom:10px;
+}
+
+/*before/after pattern*/
+.after {
+    background-color: #f6f9fc !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*highlight*/
+.highlight {
+    background-color: rgb(252, 234, 187);
+    display: inline;
+}
+
+/*image center*/
+
+.image-box i {
+    font-size: 40px;
+    color: rgb(243, 115, 53);
+}
+
+/*horizontal center align*/
+.h-center {
+    justify-content: center;
+    -ms-flex-pack: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+
 /*parallax*/
 .wp-block-cover-image {
     position: relative;
@@ -146,7 +219,7 @@ figcaption p {
     /*background-position: 50%;*/
     min-height: 450px;
     width: 100%;
-   /* margin: 0 0 1.5em;*/
+    /* margin: 0 0 1.5em;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,6 +336,39 @@ header .intro-text .skills {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3);
 }
 
+
+/*hero*/
+
+.blue-gradient {
+    background: linear-gradient(to right, rgb(0, 0, 70), rgb(28, 181, 224));
+}
+
+.citrus-gradient {
+    background: linear-gradient(to left, rgb(253, 200, 48), rgb(243, 115, 53));
+}
+
+.ui-patterns {
+    background: url("../images-dec-19/ui-patterns-hero.jpg") no-repeat center center;
+    height: 500px;
+}
+
+.hero {
+    max-height: 500px;
+}
+
+.hero img.planner {
+    -webkit-box-shadow: 11px 14px 8px -2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 11px 14px 8px -2px rgba(0, 0, 0, 0.1);
+    box-shadow: 11px 14px 8px -2px rgba(0, 0, 0, 0.1);
+    transform: rotate(10deg);
+    margin-top: 50px;
+    -webkit-backface-visibility: hidden;
+}
+
+.hero .intro {
+    margin-top: 12%;
+}
+
 .process-overview h3 {
     margin-bottom: 20px;
 }
@@ -273,6 +379,30 @@ header .intro-text .skills {
     font-size: 24px;
     color: #47495a;
 }
+
+.project-summary h5:first-child {
+    margin-top: 40px;
+}
+
+.project-summary h5 {
+    margin-bottom: 10px;
+}
+
+.project-summary p {
+    margin-top: 0;
+}
+
+.process-overview h5 span {
+    color: #1cafc6;
+    font-weight: bold;
+    font-size: larger;
+    padding-right: 8px;
+}
+
+/*.process-overview .col-md-4 > ul {
+    list-style: none;
+    padding-left: 27px;
+}*/
 
 .process-overview h5 {
     margin-bottom: 10px;
@@ -680,10 +810,12 @@ footer .footer-below {
     border-radius: 100%;
     font-size: 18px;
     line-height: 26px;
+    background-color: #fff;
 }
 
-.scroll-top .btn:focus {
+.scroll-top .btn:focus, .scroll-top .btn:hover {
     outline: 0;
+    background-color:#47495a;
 }
 
 .portfolio-modal .modal-content {
@@ -751,9 +883,12 @@ footer .footer-below {
 }
 
 .alert-info {
-    color: #31708f;
-    background-color: #d9edf7;
+    color: #47495a;
+    background-color: transparent;
     border: none;
+    border-left: 3px solid #1cafc6;
+    border-radius: 0;
+    padding: 0 0 0 15px;
 }
 
 /*vertical center*/
@@ -805,6 +940,9 @@ footer .footer-below {
     font-size: 14px;
     color: #6b7c93;
 }
+
+/*pros & cons*/
+
 
 @keyframes blink {
     0% {
@@ -882,6 +1020,10 @@ footer .footer-below {
     margin-top: 60px !important;
 }
 
+.mb-60 {
+    margin-bottom: 60px !important;
+}
+
 .mt-90 {
     margin-top: 90px !important;
 }
@@ -897,6 +1039,19 @@ footer .footer-below {
 .pb-20 {
     padding-bottom: 20px !important;
 }
+
+.pt-30 {
+    padding-top: 30px !important;
+}
+
+.pr-5 {
+    padding-right: 5px !important;
+}
+
+.pt-15 {
+    padding-top: 15px !important;
+}
+
 
 /*medium desktop only*/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -941,6 +1096,19 @@ footer .footer-below {
     .mt-90-md-lg {
         margin-top: 90px !important;
     }
+
+    .image-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: baseline;
+        -ms-flex-align: center;
+        align-items: baseline;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }
 
 #portfolio .portfolio-item {
@@ -962,14 +1130,6 @@ footer .footer-below {
 @media (min-width: 768px) and (max-width: 991px) {
     body, p {
         font-size: 15px;
-    }
-
-    .portfolio-modal .modal-content h2 {
-        font-size: 2em;
-    }
-
-    h3 {
-        font-size: 1.5em;
     }
 
     ul li strong {
@@ -1031,6 +1191,10 @@ footer .footer-below {
     .data, em {
         font-size: large;
     }
+
+    .scroll-top {
+        bottom: 15%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1041,6 +1205,11 @@ footer .footer-below {
 
 /*mobile*/
 @media (max-width: 767px) {
+    header .container {
+        padding-top: 75px;
+        padding-bottom: 0;
+    }
+
     section {
         padding: 75px 0;
     }
@@ -1114,14 +1283,6 @@ footer .footer-below {
         margin-top: 40px !important;
     }
 
-    .portfolio-modal .modal-content h2 {
-        font-size: 1.5em;
-    }
-
-    h3 {
-        font-size: 1.2em;
-    }
-
     .portfolio-modal .close-modal {
         right: 25px;
         top: 10px;
@@ -1188,6 +1349,22 @@ footer .footer-below {
 
     .modal-content .project-details p {
         font-size: 20px;
+    }
+
+    .modal-content .navbar-header {
+        position: absolute;
+    }
+
+    .blue-gradient img {
+        width: 85%;
+    }
+
+    .modal-content .intro {
+        margin-bottom: 20px;
+    }
+
+    .ui-patterns {
+        height: 320px;
     }
 }
 
