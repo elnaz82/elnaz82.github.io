@@ -6,9 +6,9 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('.portfolio-modal').on('click', '.page-scroll a', function(event) {
+    $(window).on('click', '.page-scroll a', function(event) {
         var $anchor = $(this);
-        $('.portfolio-modal').stop().animate({
+        $(window).stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
@@ -17,13 +17,14 @@ $(function() {
 
 
 //Check to see if the window is top if not then display button
-$('.portfolio-modal').scroll(function() {
+$(window).scroll(function() {
     if ($(this).scrollTop() < 150) {
         $('.scroll-top').fadeOut();
     } else {
         $('.scroll-top').fadeIn();
     }
 });
+
 
 //Click event to scroll to top
 /*$('.scroll-top').click(function() {
@@ -57,13 +58,13 @@ $('.navbar-collapse ul li a').click(function() {
 
 
 /*typed plugin trigger*/
-$(function(){
+/*$(function(){
     $("#statements").typed({
         strings: [
             "I'm a UX/UI Designer <br>based in San Mateo."],
         typeSpeed: 30
     });
-});
+});*/
 
 /*svg shapes*/
 (function() {
@@ -101,4 +102,9 @@ $(function() {
         target: null,
         remove: false
     });
+});
+
+/*transitions*/
+$(function () {
+    AOS.init();
 });
