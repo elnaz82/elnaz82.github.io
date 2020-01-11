@@ -67,7 +67,7 @@ $('.navbar-collapse ul li a').click(function() {
 });*/
 
 /*svg shapes*/
-(function() {
+/*(function() {
 
     function init() {
         var speed = 300,
@@ -92,7 +92,7 @@ $('.navbar-collapse ul li a').click(function() {
 
     init();
 
-})();
+})();*/
 
 /*match height*/
 $(function() {
