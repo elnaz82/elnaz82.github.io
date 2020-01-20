@@ -299,6 +299,7 @@ header #gradient {
     /*background: linear-gradient(150deg,#401afd 28%,#05d5ff 105%);*/
     /*background: linear-gradient(150deg,#5837ff 15%,#12d6fe 70%,#93fec0 94%);*/
     background: radial-gradient(ellipse farthest-side at 100% 100%, #dbf6c8 10%, #1cafc6 50%, #012690 110%);
+    /*background: linear-gradient(to right, rgb(0, 0, 70), rgb(28, 181, 224));*/
     position: absolute;
     height: 800px;
 }
@@ -358,7 +359,7 @@ header .intro-text .skills {
 }
 
 .ui-patterns {
-    background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+    background: linear-gradient(to top, rgb(48, 207, 208) 0%, rgb(51, 8, 103) 100%);
 }
 
 .hero.about {
@@ -888,7 +889,7 @@ footer .footer-below {
 }
 
 .alert-info {
-    color: #47495a;
+    color: #6b7c93;
     background-color: transparent;
     border: none;
     border-left: 3px solid #1cafc6;
@@ -1134,6 +1135,10 @@ footer .footer-below {
         margin-top: 90px !important;
     }
 
+    .pb-90-sm-md-lg {
+        padding-bottom: 90px !important;
+    }
+
     .mt-200-sm-md-lg {
         margin-top: 200px !important;
     }
@@ -1217,7 +1222,7 @@ footer .footer-below {
         font-size: 22px;
     }
 
-    .pb-100-sm{
+    .pb-100-sm {
         padding-bottom: 100px !important;
     }
 
@@ -1319,6 +1324,10 @@ footer .footer-below {
 
     .mb-75-xs {
         padding-bottom: 75px !important;
+    }
+
+    .pb-40-xs{
+        padding-bottom: 40px !important;
     }
 
     .portfolio-modal .close-modal {
