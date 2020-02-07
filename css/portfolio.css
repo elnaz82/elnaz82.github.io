@@ -1058,6 +1058,14 @@ footer .footer-below {
     padding-right: 5px !important;
 }
 
+.pr-10 {
+    padding-right: 10px !important;
+}
+
+.pr-15 {
+    padding-right: 15px !important;
+}
+
 .pt-15 {
     padding-top: 15px !important;
 }
