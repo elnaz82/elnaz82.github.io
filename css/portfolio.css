@@ -33,7 +33,7 @@ p.small {
 }
 
 a {
-    color: #1681dc;
+    color: #008FFF;
 }
 
 a:hover,
@@ -102,7 +102,7 @@ em {
 }
 
 blockquote {
-    color: #1cafc6;
+    color: #008FFF;
     font-size: 2.125rem;
     padding: 0;
     border: none;
@@ -201,7 +201,7 @@ ul.no-style-list {
 
 /*highlight*/
 .highlight {
-    background-color: rgb(252, 234, 187);
+    background-color: /*rgb(252, 234, 187);*/ rgb(233, 253, 240);
     display: inline;
 }
 
@@ -351,19 +351,19 @@ header .intro-text .skills {
 /*hero*/
 
 .blue-gradient {
-    background: linear-gradient(to right, rgb(0, 0, 70), rgb(28, 181, 224));
+    background:linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
 }
 
 .green-gradient {
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(15, 155, 15));
+    background: linear-gradient(to right, rgb(0, 4, 40), rgb(0, 78, 146));
 }
 
 .ui-patterns {
-    background: linear-gradient(to top, rgb(48, 207, 208) 0%, rgb(51, 8, 103) 100%);
+    background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
 }
 
 .hero.about {
-    background: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
+    background: linear-gradient(180deg, #002D50 33%, #496885 100%);
 }
 
 .process-overview h3 {
@@ -390,7 +390,7 @@ header .intro-text .skills {
 }
 
 .process-overview h5 span {
-    color: #1cafc6;
+    color: #008FFF;
     font-weight: bold;
     font-size: larger;
     padding-right: 8px;
@@ -571,7 +571,7 @@ section h2 {
 #experience {
     font-size: 23px;
     font-weight: bold;
-    color: #1cafc6;
+    color: #008FFF;
 }
 
 #portfolio /*, .process-overview*/
@@ -624,7 +624,7 @@ section h2 {
     width: 100%;
     height: 117px;
     transition: .5s ease;
-    border-top: 5px solid #1cafc6;
+    border-top: 5px solid #008FFF;
     transform: skewY(4.5deg);
     -webkit-transform: skewY(4.5deg);
     -moz-transform: skewY(4.5deg);
@@ -892,7 +892,7 @@ footer .footer-below {
     color: #6b7c93;
     background-color: transparent;
     border: none;
-    border-left: 3px solid #1cafc6;
+    border-left: 3px solid #008FFF;
     border-radius: 0;
     padding: 0 0 0 15px;
 }
@@ -932,7 +932,7 @@ footer .footer-below {
 }
 
 .new {
-    background-color: #1cafc6;
+    background-color: #008FFF;
     padding: 3px 5px;
     margin-left: 5px;
     border-radius: 3px;
@@ -1285,7 +1285,7 @@ footer .footer-below {
     }
 
     .navbar-shrink .navbar-toggle .icon-bar {
-        background-color: #1cafc6;
+        background-color: #008FFF;
     }
 
     .navbar-default .navbar-collapse {
