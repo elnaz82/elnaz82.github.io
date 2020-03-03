@@ -195,8 +195,8 @@ ul.no-style-list {
 /*before/after pattern*/
 .after {
     background-color: #f6f9fc !important;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*highlight*/
@@ -224,7 +224,6 @@ ul.no-style-list {
     flex-wrap: wrap;
     padding: 0;
 }
-
 
 /*parallax*/
 .wp-block-cover-image {
@@ -360,6 +359,14 @@ header .intro-text .skills {
 
 .ui-patterns {
     background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+}
+
+.hero.healthzone{
+    background-color: #69CB88;
+}
+
+.hero.healthzone .row{
+    margin-top: 150px;
 }
 
 .hero.about {
@@ -1420,6 +1427,10 @@ footer .footer-below {
 
     #portfolio {
         padding-bottom: 75px !important;
+    }
+
+    .text-left-xs {
+        text-align: left !important;
     }
 
 }
