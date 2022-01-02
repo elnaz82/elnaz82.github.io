@@ -6,23 +6,22 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $(window).on('click', '.page-scroll a', function(event) {
-        var $anchor = $(this);
-        $(window).stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
+  $(window).on('click', '.page-scroll a', function(event) {
+    var $anchor = $(this);
+    $(window).stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+  });
 });
-
 
 //Check to see if the window is top if not then display button
 $(window).scroll(function() {
-    if ($(this).scrollTop() < 150) {
-        $('.scroll-top').fadeOut();
-    } else {
-        $('.scroll-top').fadeIn();
-    }
+  if ($(this).scrollTop() < 150) {
+    $('.scroll-top').fadeOut();
+  } else {
+    $('.scroll-top').fadeIn();
+  }
 });
 
 
@@ -36,24 +35,24 @@ $(window).scroll(function() {
 
 // Floating label headings for the contact form
 $(function() {
-    $('.scroll-top').hide();
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-        $(this).toggleClass("floating-label-form-group-with-value", !! $(e.target).val());
-    }).on("focus", ".floating-label-form-group", function() {
-        $(this).addClass("floating-label-form-group-with-focus");
-    }).on("blur", ".floating-label-form-group", function() {
-        $(this).removeClass("floating-label-form-group-with-focus");
-    });
+  $('.scroll-top').hide();
+  $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+    $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+  }).on("focus", ".floating-label-form-group", function() {
+    $(this).addClass("floating-label-form-group-with-focus");
+  }).on("blur", ".floating-label-form-group", function() {
+    $(this).removeClass("floating-label-form-group-with-focus");
+  });
 });
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
-    target: '.navbar-fixed-top'
+  target: '.navbar-fixed-top'
 })
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
+  $('.navbar-toggle:visible').click();
 });
 
 
@@ -96,15 +95,15 @@ $('.navbar-collapse ul li a').click(function() {
 
 /*match height*/
 $(function() {
-    $('.item').matchHeight({
-        byRow: true,
-        property: 'height',
-        target: null,
-        remove: false
-    });
+  $('.item').matchHeight({
+    byRow: true,
+    property: 'height',
+    target: null,
+    remove: false
+  });
 });
 
 /*transitions*/
-$(function () {
-    AOS.init();
+$(function() {
+  AOS.init();
 });
