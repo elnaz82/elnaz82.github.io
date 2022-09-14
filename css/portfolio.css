@@ -1367,6 +1367,10 @@ footer .footer-below {
     padding-bottom: 0;
   }
 
+  .display-block-xs{
+    display: block !important;
+  }
+
   section {
     padding: 75px 0;
   }
